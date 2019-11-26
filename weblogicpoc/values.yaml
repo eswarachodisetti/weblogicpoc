@@ -7,8 +7,8 @@
 apiVersion: "weblogic.oracle/v5"
 kind: Domain
 metadata:
-  name: weblogic-sample-domain
-  namespace: weblogic-sample-domain-ns
+  name: weblogic-cicd-domain
+  namespace: default
   labels:
     weblogic.resourceVersion: domain-v2
     weblogic.domainUID: domain-primordial-1
