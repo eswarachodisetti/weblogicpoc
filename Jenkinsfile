@@ -44,8 +44,8 @@ pipeline {
       steps {
         container('jx-base') {
           dir('weblogicpoc') {
-
-               sh 'jx step helm apply --name weblogicpoc'
+		sh 'kubectl get pods'
+            //   sh 'jx step helm apply --name weblogicpoc'
         
        
        }
