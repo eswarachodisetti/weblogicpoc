@@ -10,7 +10,7 @@ pipeline {
   }
   stages {
     
-    
+  /*  
      stage('Build') {
       steps {
         container('jx-base') {
@@ -37,10 +37,10 @@ pipeline {
 			}
 		}
 	}
-	     
+*/     
 	
     
-    stage('Validate Environment') {
+    stage('Deployment') {
       steps {
         container('jx-base') {
           dir('weblogicpoc') {
