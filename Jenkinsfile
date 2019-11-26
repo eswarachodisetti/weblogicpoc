@@ -6,7 +6,7 @@ pipeline {
     label "jenkins-jx-base"
   }
   environment {
-    DEPLOY_NAMESPACE = "jx-production"
+    DEPLOY_NAMESPACE = "default"
   }
   stages {
     
