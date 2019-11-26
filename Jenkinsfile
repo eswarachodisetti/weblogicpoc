@@ -44,7 +44,8 @@ pipeline {
       steps {
         container('jx-base') {
           dir('weblogicpoc') {
-		sh 'kubectl -n jx-production scale deployment pksjenkins --replicas=0'
+		//sh 'kubectl -n jx-production scale deployment pksjenkins --replicas=0'
+		  sh 'kubectl apply -f deployment.yaml'
             //   sh 'jx step helm apply --name weblogicpoc'
         
        
